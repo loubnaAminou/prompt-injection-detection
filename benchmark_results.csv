@@ -1,0 +1,7 @@
+Metric,GUARD,Classifier
+F1-Score,0.737,0.667
+Precision,0.855,0.500
+Recall,0.649,1.000
+Throughput (resumes/sec),1.6,17.2
+Avg Inference Time (s),0.6438,0.0581
+Approach Type,Zero-shot (Template-based),Supervised (Fine-tuned)

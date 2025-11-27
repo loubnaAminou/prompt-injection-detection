@@ -1,0 +1,15 @@
+GUARD Ablation Study Analysis
+==================================================
+
+                                Model     F1 Precision Recall Time (s) Throughput
+                    all-mpnet-base-v2 0.7159    0.8807 0.6031   0.6612     1.51/s
+                     all-MiniLM-L6-v2 0.7640    0.9377 0.6446   0.6209     1.61/s
+                 all-distilroberta-v1 0.7479    0.8907 0.6446   0.6313     1.58/s
+paraphrase-multilingual-MiniLM-L12-v2 0.7244    0.5923 0.9326   0.6228     1.61/s
+           multi-qa-mpnet-base-dot-v1 0.7697    0.6632 0.9170   0.6537     1.53/s
+
+Key Insights:
+- Best F1: multi-qa-mpnet-base-dot-v1 (0.7697)
+- Best Precision: all-MiniLM-L6-v2 (0.9377)
+- Best Recall: paraphrase-multilingual-MiniLM-L12-v2 (0.9326)
+- Fastest: all-MiniLM-L6-v2 (0.6209s)

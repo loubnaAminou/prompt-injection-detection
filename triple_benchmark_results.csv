@@ -1,0 +1,9 @@
+Metric,GUARD,Classifier,WithSecure
+F1-Score,0.013,0.667,0.877
+Precision,1.000,0.500,0.970
+Recall,0.006,1.000,0.800
+Throughput (resumes/sec),1.6,15.9,Not Reported
+Avg Inference Time (s),0.6450,0.0630,Not Reported
+Approach Type,Zero-shot (Similarity),Supervised (Fine-tuned),Supervised (DistilBERT)
+Data Requirements,Low (Prompt templates only),High (Labeled dataset),High (Labeled dataset)
+Best Epoch/Config,Threshold: 0.65,Threshold: 0.50,Epoch: 1.0

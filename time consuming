@@ -1,0 +1,99 @@
+only CPU and one threshold (0.65)
+2025-03-06 08:53:36,270 - INFO: Use pytorch device_name: cuda
+2025-03-06 08:53:36,271 - INFO: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-03-06 09:13:47,464 - INFO: Prompt Injection Detection Performance:
+2025-03-06 09:13:47,465 - INFO: Precision: 0.5935
+2025-03-06 09:13:47,465 - INFO: Recall: 0.7560
+2025-03-06 09:13:47,465 - INFO: F1-Score: 0.6649
+2025-03-06 09:13:47,465 - INFO: Confusion Matrix:
+2025-03-06 09:13:47,465 - INFO: [[239 261]
+ [123 381]]
+
+using CUDA & 1 threshold (0.65)
+2025-03-06 10:23:55,399 - INFO: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-03-06 10:27:26,101 - INFO: Prompt Injection Detection Performance:
+2025-03-06 10:27:26,101 - INFO: Precision: 0.5020
+2025-03-06 10:27:26,101 - INFO: Recall: 1.0000
+2025-03-06 10:27:26,102 - INFO: F1-Score: 0.6684
+2025-03-06 10:27:26,102 - INFO: Confusion Matrix:
+2025-03-06 10:27:26,102 - INFO: [[  0 500]
+ [  0 504]]
+
+-------------- THRESHOLD ------------------
+**** 68% :
+2025-03-06 14:40:02,751 - INFO: Prompt Injection Detection Performance:
+2025-03-06 14:40:02,751 - INFO: Precision: 0.6738
+2025-03-06 14:40:02,751 - INFO: Recall: 0.6320
+2025-03-06 14:40:02,751 - INFO: F1-Score: 0.6522
+2025-03-06 14:40:02,751 - INFO: Confusion Matrix:
+2025-03-06 14:40:02,751 - INFO: [[347 153]
+                                [184 316]]
+
+**** 70% :
+2025-03-06 12:18:53,710 - INFO: Use pytorch device_name: cuda
+2025-03-06 12:18:53,710 - INFO: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-03-06 12:28:06,237 - INFO: Prompt Injection Detection Performance:
+2025-03-06 12:28:06,238 - INFO: Precision: 0.7657
+2025-03-06 12:28:06,238 - INFO: Recall: 0.5620
+2025-03-06 12:28:06,238 - INFO: F1-Score: 0.6482
+2025-03-06 12:28:06,238 - INFO: Confusion Matrix:
+2025-03-06 12:28:06,238 - INFO: [[414  86]
+ [219 281]]
+
+ *** 75% :
+ 2025-03-06 11:57:02,659 - INFO: Use pytorch device_name: cuda
+2025-03-06 11:57:02,659 - INFO: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-03-06 12:06:47,699 - INFO: Prompt Injection Detection Performance:
+2025-03-06 12:06:47,700 - INFO: Precision: 0.9227
+2025-03-06 12:06:47,700 - INFO: Recall: 0.4060
+2025-03-06 12:06:47,700 - INFO: F1-Score: 0.5639
+2025-03-06 12:06:47,700 - INFO: Confusion Matrix:
+2025-03-06 12:06:47,700 - INFO: [[483  17]
+ [297 203]]
+
+
+ What’s Next?
+✅ Option 1: Adjust the Threshold One More Time (0.68 or 0.65)
+If you want higher recall, lowering the threshold slightly could help.
+Try 0.68 or 0.65 and compare.
+✅ Option 2: Improve the Data Quality
+Analyze False Negatives (FN = 219)
+
+These are actual prompt injections that the model missed.
+Check if they have a common pattern (e.g., too subtle? Not enough training examples?).
+Balance the Dataset
+
+You have more non-injections than injections.
+Use SMOTE or data augmentation to fix imbalance.
+✅ Option 3: Try Another Model or Classifier
+Train a Classifier (Logistic Regression, SVM, or a Small Neural Network)
+
+Instead of relying only on cosine similarity, train a model using your embeddings.
+Fine-Tune all-mpnet-base-v2
+
+Train it on your own dataset instead of using general pre-trained embeddings.
+Which one do you want to try next?
+
+
+#### PERFECT RESULTS ######
+2025-03-10 12:26:02,869 - INFO: Use pytorch device_name: cuda
+2025-03-10 12:26:02,869 - INFO: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-03-10 12:59:12,308 - INFO: Prompt Injection Detection Performance:
+2025-03-10 12:59:12,308 - INFO: Precision: 0.8636
+2025-03-10 12:59:12,308 - INFO: Recall: 0.6239
+2025-03-10 12:59:12,308 - INFO: F1-Score: 0.7244
+2025-03-10 12:59:12,308 - INFO: Confusion Matrix:
+2025-03-10 12:59:12,308 - INFO: [[695  76]
+ [290 481]]
+ 
+
+
+2025-05-04 21:23:15,642 - INFO: Use pytorch device_name: cuda
+2025-05-04 21:23:15,642 - INFO: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-05-04 21:56:16,055 - INFO: Prompt Injection Detection Performance:
+2025-05-04 21:56:16,055 - INFO: Precision: 0.8547
+2025-05-04 21:56:16,055 - INFO: Recall: 0.6485
+2025-05-04 21:56:16,055 - INFO: F1-Score: 0.7375
+2025-05-04 21:56:16,056 - INFO: Confusion Matrix:
+2025-05-04 21:56:16,056 - INFO: [[686  85]
+ [271 500]]

@@ -1,0 +1,6 @@
+Method,F1-Score,Recall,Precision,Throughput (resumes/sec),Avg Chunks/Resume,Data Requirements,Detection Quality
+GUARD (Enhanced - Fine-Grained),0.7537026878771256,0.8910505836575876,0.653041825095057,0.96,136.8,Low (Templates),Excellent
+GUARD (Sentence-Aware),0.7372340425531915,0.8988326848249028,0.6248872858431019,1.58,79.4,Low (Templates),Good
+GUARD (Paragraph-Based),0.7207207207207207,0.8300907911802854,0.6368159203980099,1.43,91.5,Low (Templates),Good
+Supervised Classifier,0.667,1.0,0.5,16.17,N/A,High (Labeled Data),Moderate
+WithSecure (Best),0.877,0.8,0.97,Not Reported,N/A,High (Labeled Data),Excellent (Precision)

@@ -1,0 +1,7 @@
+Distance Metric,F1-Score,Precision,Recall,Throughput (resumes/sec),Relative F1 (%)
+COSINE,0.737,0.855,0.649,1.6,+0.0%
+DOT_PRODUCT,0.737,0.855,0.649,7.5,+0.0%
+JACCARD,0.634,0.505,0.851,1.7,-14.1%
+EUCLIDEAN,0.151,1.000,0.082,2.3,-79.5%
+BERTSCORE,0.078,0.627,0.042,0.2,-89.4%
+MANHATTAN,0.000,0.000,0.000,2.3,-100.0%

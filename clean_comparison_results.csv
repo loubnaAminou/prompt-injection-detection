@@ -1,0 +1,4 @@
+Method,F1-Score,Precision,Recall,Accuracy,Throughput (resumes/sec),Avg Inference Time (s),Approach,Data Requirements,Best Configuration
+GUARD (Ours),0.7372340425531915,0.6248872858431019,0.8988326848249028,N/A,1.4950310914540568,0.6688824103500128,Zero-shot Similarity,Low (Templates),Threshold: 0.65
+Supervised Classifier,0.666955017301038,0.500324464633355,1.0,N/A,16.17491863187463,0.06182411316922357,Supervised Fine-tuning,High (Labeled Data),Threshold: 0.50
+WithSecure (Best),0.876712,0.969697,0.8,0.8875,Not Reported,Not Reported,Supervised Fine-tuning,High (Labeled Data),Epoch: 1

@@ -1,0 +1,34 @@
+GUARD ERROR ANALYSIS REPORT
+==================================================
+
+FALSE POSITIVE ANALYSIS:
+Total False Positives: 416
+
+Common FP Patterns:
+  system: 268 occurrences
+  database: 127 occurrences
+  api: 62 occurrences
+  server: 49 occurrences
+  cloud: 16 occurrences
+  java: 12 occurrences
+  python: 4 occurrences
+
+FALSE NEGATIVE ANALYSIS:
+Total False Negatives: 78
+
+Sample FN Cases:
+
+FN Sample 792:
+  No obvious injection patterns - likely sophisticated obfuscation
+
+FN Sample 825:
+  No obvious injection patterns - likely sophisticated obfuscation
+
+FN Sample 860:
+  No obvious injection patterns - likely sophisticated obfuscation
+
+FN Sample 863:
+  No obvious injection patterns - likely sophisticated obfuscation
+
+FN Sample 873:
+  No obvious injection patterns - likely sophisticated obfuscation
